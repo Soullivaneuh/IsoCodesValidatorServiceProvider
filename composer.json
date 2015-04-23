@@ -1,0 +1,33 @@
+{
+    "name": "sllh/iso-codes-validator-service-provider",
+    "type": "library",
+    "description": "Silex service provider for IsoCodesValidator",
+    "keywords": ["Silex", "ISO codes"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sullivan Senechal",
+            "email": "soullivaneuh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "sllh/iso-codes-validator": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.6",
+        "satooshi/php-coveralls": "~0.6",
+        "codeclimate/php-test-reporter": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { "SLLH\\IsoCodesValidator\\": "src" }
+    },
+    "autoload-dev": {
+        "psr-4": { "SLLH\\IsoCodesValidator\\Tests\\": "tests" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}
