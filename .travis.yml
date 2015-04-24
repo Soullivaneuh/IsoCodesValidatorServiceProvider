@@ -9,33 +9,25 @@ php:
   - nightly
 
 env:
-  - SYMFONY_VERSION=2.6.*
+  - SILEX_VERSION=1.2.*
 
 matrix:
   fast_finish: true
   include:
     - php: 5.3.3
-      env: SYMFONY_VERSION=2.3.* COMPOSER_FLAGS="--prefer-lowest"
+      env: SILEX_VERSION=1.0.* COMPOSER_FLAGS="--prefer-lowest"
     - php: 5.6
-      env: SYMFONY_VERSION=2.3.*
+      env: SILEX_VERSION=1.0.*
     - php: 5.6
-      env: SYMFONY_VERSION=2.4.*
+      env: SILEX_VERSION=1.1.*
     - php: 5.6
-      env: SYMFONY_VERSION=2.5.*
+      env: SILEX_VERSION=1.2.*
     - php: 5.6
-      env: SYMFONY_VERSION=2.6.*
-    - php: 5.6
-      env: SYMFONY_VERSION=2.7.*@dev
-    - php: 5.6
-      env: SYMFONY_VERSION=2.8.*@dev
-    - php: 5.6
-      env: SYMFONY_VERSION="3.0.x-dev as 2.6" # Trick to avoid deps error
+      env: SILEX_VERSION=1.3.*@dev
   allow_failures:
     - php: hhvm
     - php: nightly
-    - env: SYMFONY_VERSION=2.7.*@dev
-    - env: SYMFONY_VERSION=2.8.*@dev
-    - env: SYMFONY_VERSION="3.0.x-dev as 2.6"
+    - env: SILEX_VERSION=1.3.*@dev
 
 cache:
   directories:
@@ -45,7 +37,7 @@ cache:
 before_script:
   - composer selfupdate
   - composer config -g github-oauth.github.com $GITHUB_OAUTH_TOKEN
-  - composer require "symfony/symfony:${SYMFONY_VERSION}" --no-update
+  - composer require "silex/silex:${SILEX_VERSION}" --no-update
   - composer update --prefer-dist $COMPOSER_FLAGS
 
 script:

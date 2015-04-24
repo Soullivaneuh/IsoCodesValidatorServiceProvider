@@ -12,6 +12,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
+        "silex/silex": "~1.0",
         "sllh/iso-codes-validator": "~1.0"
     },
     "require-dev": {
@@ -20,10 +21,10 @@
         "codeclimate/php-test-reporter": "dev-master"
     },
     "autoload": {
-        "psr-4": { "SLLH\\IsoCodesValidator\\": "src" }
+        "psr-4": { "SLLH\\": "src" }
     },
     "autoload-dev": {
-        "psr-4": { "SLLH\\IsoCodesValidator\\Tests\\": "tests" }
+        "psr-4": { "SLLH\\Tests\\": "tests" }
     },
     "extra": {
         "branch-alias": {
