@@ -18,7 +18,7 @@ Silex service provider for [IsoCodesValidator](https://github.com/Soullivaneuh/I
 
 ## Prerequisites
 
-*TODO*
+This version of the provider requires Silex 1.0+.
 
 ## Installation
 
@@ -28,7 +28,15 @@ Silex service provider for [IsoCodesValidator](https://github.com/Soullivaneuh/I
 $ php composer.phar require sllh/iso-codes-validator-service-provider "~1.0"
 ```
 
-*TODO*
+### Register the service
+
+```php
+<?php
+
+use SLLH\Provider\IsoCodesValidatorServiceProvider;
+
+$app->register(new IsoCodesValidatorServiceProvider());
+```
 
 ## Usage
 
