@@ -5,6 +5,7 @@ Silex service provider for [IsoCodesValidator](https://github.com/Soullivaneuh/I
 [![Latest Stable Version](https://poser.pugx.org/sllh/iso-codes-validator-service-provider/v/stable)](https://packagist.org/packages/sllh/iso-codes-validator-service-provider)
 [![Latest Unstable Version](https://poser.pugx.org/sllh/iso-codes-validator-service-provider/v/unstable)](https://packagist.org/packages/sllh/iso-codes-validator-service-provider)
 [![License](https://poser.pugx.org/sllh/iso-codes-validator-service-provider/license)](https://packagist.org/packages/sllh/iso-codes-validator-service-provider)
+[![Dependency Status](https://www.versioneye.com/php/sllh:iso-codes-validator-service-provider/badge.svg)](https://www.versioneye.com/php/sllh:iso-codes-validator-service-provider)
 
 [![Total Downloads](https://poser.pugx.org/sllh/iso-codes-validator-service-provider/downloads)](https://packagist.org/packages/sllh/iso-codes-validator-service-provider)
 [![Monthly Downloads](https://poser.pugx.org/sllh/iso-codes-validator-service-provider/d/monthly)](https://packagist.org/packages/sllh/iso-codes-validator-service-provider)
