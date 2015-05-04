@@ -19,7 +19,7 @@ class IsoCodesValidatorServiceProvider implements ServiceProviderInterface
     {
         if (isset($app['translator'])) {
             $r = new \ReflectionClass('SLLH\IsoCodesValidator\IsoCodesConstraintValidator');
-            $file = dirname($r->getFilename()).'/Resources/translations/validators.'.$app['locale'].'.xlf';
+            $file = dirname($r->getFilename()) . '/Resources/translations/validators.' . $app['locale'] . '.xlf';
             if (file_exists($file)) {
                 $app['translator']->addResource('xliff', $file, $app['locale'], 'validators');
             }
