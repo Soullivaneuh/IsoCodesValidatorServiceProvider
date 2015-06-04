@@ -4,8 +4,8 @@ namespace SLLH\Tests\Provider;
 
 use Silex\Application;
 use Silex\Provider\TranslationServiceProvider;
-use Silex\Translator;
 use SLLH\Provider\IsoCodesValidatorServiceProvider;
+use Symfony\Component\Translation\TranslatorInterface;
 
 class IsoCodesValidatorServiceProviderTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,9 +23,7 @@ class IsoCodesValidatorServiceProviderTest extends \PHPUnit_Framework_TestCase
     {
         $app = new Application();
 
-        $app->register(new TranslationServiceProvider(), array(
-            'locale_fallbacks' => array(),
-        ));
+        $app->register(new TranslationServiceProvider());
         $app->register(new IsoCodesValidatorServiceProvider());
     }
 
@@ -38,13 +36,12 @@ class IsoCodesValidatorServiceProviderTest extends \PHPUnit_Framework_TestCase
             'locale' => $locale,
         ));
 
-        $app->register(new TranslationServiceProvider(), array(
-            'locale_fallbacks' => array(),
-        ));
+        $app->register(new TranslationServiceProvider());
         $app->register(new IsoCodesValidatorServiceProvider());
 
-        /** @var Translator $translator */
+        /** @var TranslatorInterface $translator */
         $translator = $app['translator'];
+        $this->assertInstanceOf('Symfony\Component\Translation\TranslatorInterface', $translator);
 
         $source = 'This value is not a valid VAT.';
         $translation = $translator->trans($source, array(), 'validators', $locale);
