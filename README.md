@@ -19,7 +19,7 @@ Silex service provider for [IsoCodesValidator](https://github.com/Soullivaneuh/I
 
 ## Prerequisites
 
-This version of the provider requires Silex 1.0+.
+This version of the provider requires Silex 1.1+.
 
 ## Installation
 
