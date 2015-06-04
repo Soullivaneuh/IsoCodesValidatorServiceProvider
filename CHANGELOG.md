@@ -4,3 +4,4 @@
 
  * Add .gitattributes to ignore useless files on export.
  * Bump `silex/silex` requirement to `v1.1.1` in order to fix deprecation issue.
+ * Add `symfony/translation` requirement.

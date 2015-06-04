@@ -13,6 +13,7 @@
     "require": {
         "php": ">=5.3.3",
         "silex/silex": "^1.1.1",
+        "symfony/translation": "~2.3",
         "sllh/iso-codes-validator": "~1.0"
     },
     "require-dev": {
