@@ -26,7 +26,7 @@ This version of the provider requires Silex 1.0+.
 ### Download using composer
 
 ``` bash
-$ php composer.phar require sllh/iso-codes-validator-service-provider "~1.0"
+$ php composer.phar require sllh/iso-codes-validator-service-provider
 ```
 
 ### Register the service
