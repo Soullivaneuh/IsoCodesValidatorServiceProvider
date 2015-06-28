@@ -7,6 +7,11 @@ use Silex\Provider\TranslationServiceProvider;
 use SLLH\Provider\IsoCodesValidatorServiceProvider;
 use Symfony\Component\Translation\TranslatorInterface;
 
+/**
+ * @author Sullivan Senechal <soullivaneuh@gmail.com>
+ *
+ * @group legacy
+ */
 class IsoCodesValidatorServiceProviderTest extends \PHPUnit_Framework_TestCase
 {
     public function testRegisterAndBoot()
