@@ -14,11 +14,11 @@
         "php": ">=5.3.3",
         "silex/silex": "^1.1.1",
         "symfony/translation": "~2.3",
-        "sllh/iso-codes-validator": "~1.0"
+        "sllh/iso-codes-validator": "~1.1"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.6",
-        "symfony/phpunit-bridge": "~2.7",
+        "symfony/phpunit-bridge": "^2.7.1",
         "satooshi/php-coveralls": "~0.6",
         "codeclimate/php-test-reporter": "dev-master"
     },
